@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목글이 여기에 들어갑니다.</title>
+    <link rel="stylesheet" href="style.css"/>
+    <style>
+    </style>
+</head>
+<body>
+    <!-- 웹에서 사용 가능한 이미지 포멧 -->
+     <!-- jpg/jpeg: 16비트, 65,536색, 그라데이션이 들어간 이미지 -->
+     <!-- gif: 8비트 256색, 색의 변화가 단순할떄 -->
+     <!-- png: 24비트 16,777,216색, 투명한 배경을 처리할때 -->
+    
+     <!-- 공공 기관은 웹페이지의 무게를 최소화 하기위한 전쟁을 펼침 -->
+
+     <!-- 10kb jpg이미지 -->
+     <!-- 10kb gif이미지 -->
+      <!-- 위와같은 이미지를 동등한 위치에 배치했을 때 gif가 먼저 로딩된다 -->
+
+    <h1 style="color: blue; text-align: center;">오늘은 이미지를 가지고 작업합니다.</h1>
+    <a href="https://www.naver.com" target="_blank" title="클릭하면 네이버로 갑니다">
+        <img src="images/rabbit.png" alt="귀여운 토끼 일러스트 이미지"/>
+    </a>
+    <a href="https://www.daum.net" target="_blank">
+        <img src="https://ssl.pstatic.net/melona/libs/1520/1520863/c23a41986f11aa4529e4_20250210180219007.jpg" alt="서울사이버대학 광고" width="800px"/>
+    </a>
+
+    <!-- &nbsp는 한번이 스페이스바 한번 -->
+    <a href="https://www.naver.com">네이버로 &nbsp;&nbsp;&nbsp;갑니다.</a>
+    <p style="text-align: center;" title="마우스를 올리셨군요 내려주세ㅛ이.">p태그는 문장을 작성할 때 사용하는 태그이다.</p>
+    <!-- html문서에 css를 적용하는 방법 -->
+     <!-- internal방식 / external / inline -->
+
+    <!-- h1: font-size: 32px, font-weight: bold -->
+     <!-- 일반적인 텍스트는 16px -->
+
+    <!-- 일반적인 div p a 태그는 띄어 쓰기를 얼마나 하든 한번밖에 인식 안함. br태그 쓰는거 아닌 이상 줄띄움도 생략함 -->
+    <!-- pre태그는 띄어쓰기 전부 인정해줌 막       이렇게 해도 그대로 출력됨. -->
+    <!-- xmp태그 안에 넣으면 소스코드를 그대로 보여줌 
+     근데 그냥 따옴표로 묶어서 보여주면 안되는거미? 
+     오 근데 tap키 한것도 다 보여준다.-->
+    <xmp>
+        <a href="https://www.naver.com">네이버로 갑니다.</a>
+        <p title="마우스를 올리셨군요 내려주세ㅛ이.">p태그는 문장을 작성할 때 사용하는 태그이다.</p>
+    </xmp>
+    <!-- 시멘틱웹: 각종객체의 의미가 부여되고 세분화되고 의미가 정리됨. -->
+
+    <!-- 여기부터 게시판 내용 들어갑니다. -->
+    <p>우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이</p>
+    <p>우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이</p>
+    <p>우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이</p>
+
+    <!-- html에서 색을 정의하는 방법 -->
+     <!-- namin방식: red, blue -->
+     <!-- rgb방식: rgb(0, 0, 255) -->
+      <!-- rgba: 알파값추가 가능 (투명도) -->
+     <!-- 16진수방식: #ffffff -->
+     <!-- 색의 상요소 hsl -->
+</body>
+</html>
