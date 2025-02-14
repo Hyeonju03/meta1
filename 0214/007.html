@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #333;
+        }
+        .line{
+            width: 1000px;
+            height: 600px;
+            border-radius: 20px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid #333;
+            background-color: white;
+        }
+        .bg{
+            padding: 20px;
+            background-color: #333;
+        }
+        ul{
+            width: 508px;
+            height: 35px;
+            margin: auto;
+            font-size: 0;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        li{
+            border: 1px solid white;
+            list-style: none;
+            display: inline-block;
+            width: 125px;
+            height: 35px;
+            font-size: 16px;
+            text-align: center;
+            line-height: 35px;
+            background-color: #333;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .a1{
+            border-radius: 20px 0 0 20px;
+        }
+        .a2{
+            border-radius: 0 20px 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Utube</h1>
+
+    <ul>
+        <li class="a1">
+            <a href="https://www.youtube.com/embed/VRnDUccentc?si=Y5K8DJdVlh5qmMGZ" target="iframe">ENDWALKER</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/embed/QY1_xZC-gLk?si=CFFfED8lAJIQRUQU" target="iframe">Bee My Honey</a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/embed/tOMWX6BY-wg?si=xFQHXZhYAa7t2IBV" target="iframe">ATHENA</a>
+        </li>
+        <li class="a2">
+            <a href="https://www.youtube.com/embed/wGbi7VT5nCc?si=6YpNC67z6kVkLXch" target="iframe">Give It All</a>
+        </li>
+    </ul>
+
+    <div class="bg">
+        <div class="line">
+            <iframe name="iframe" width="1000" height="600" src="https://www.youtube.com/embed/VRnDUccentc?si=Y5K8DJdVlh5qmMGZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+</body>
+</html>
