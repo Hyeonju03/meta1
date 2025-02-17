@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        select{
+            width: 300px;
+            height: 30px;
+            font-size: 18px;
+        }
+        #selectbox2{
+            margin-top: 20px;
+        }
+        #jump{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>select기능에 대해 알아보자</h1>
+    <div id="selectbox">
+        <label for="color">
+            color
+        </label>
+        <select id="color" title="select color">
+            <option selected>Your Color?</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+            <option value="white">white</option>
+            <option value="black">black</option>
+        </select>
+    </div>
+    <div id="selectbox2">
+        <label for="jump">
+            familysite
+        </label>
+        <select id="jump" name="jump" title="jumpMenu" onchange="window.open(this.options[this.selectedIndex].value,'_blank')">
+            <option selected>***familysite Link***</option>
+            <option value="http://www.sktelecom.com">SKtelecom</option>
+            <option value="http://www.naver.com">SKkemical</option>
+            <option value="http://www.skhynix.co.kr">SKhynix</option>
+            <option value="http://www.tworld.co.kr">Tworld</option>
+            <option value="http://adot.ai">Adot</option>
+        </select>
+    </div>
+
+    <div>
+        <textarea placeholder="내용입력하세요." rows="15" cols="100"></textarea>
+    </div>
+</body>
+</html>

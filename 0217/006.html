@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid red;
+            width: 400px;
+            height: 100px;
+        }
+        .box2{
+            margin: 20px;
+        }
+        .box3{
+            padding: 30px;
+        }
+        .box4{
+            padding: 20px;
+            /* margin auto는 위아래는 안건들이고 양 옆만 조율함 */
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        span{
+            border: 1px solid blue;
+            width: 400px;
+            height: 100px;
+            padding: 30px;
+            margin: 20px;
+            display: inline-block;
+        }
+        a{
+            border: 1px solid green;
+            width: 400px;
+            height: 100px;
+            padding: 30px;
+            margin: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- html tag에는 display속성중 block요소와 inline요소로 나눈다. -->
+     <!-- 텍스트는 가장 전형적인 인라인 요소다 -->
+      <!-- span, a, img, input 등등 -->
+     <!-- block 요소는 width:100%이다. width, height, margin,padding값을 가지고 있다. -->
+      <!-- div, p 등등.. -->
+
+    <!-- 박스의 구성을 파악한다. -->
+     <div class="box1">
+        box1
+     </div>
+     <div class="box2">
+        box2
+     </div>
+     <div class="box3">
+        box3
+     </div>
+     <div class="box4">
+        box4
+     </div>
+     <span class="in1">인라인요소</span>
+     <span class="in2">인라인요소</span>
+     <span class="in3">인라인요소</span>
+     <span class="in4">인라인요소</span>
+     <span class="in5">인라인요소</span>
+     <a href="#">인라인요소</a>
+     <a href="#">인라인요소</a>
+     <a href="#">인라인요소</a>
+     <a href="#">인라인요소</a>
+     <a href="#">인라인요소</a>
+</body>
+</html>
