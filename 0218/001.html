@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            border: 2px solid red;
+            overflow: hidden;
+        }
+        header div{
+            border: 1px solid blue;
+            height: 200px;
+            float: left;
+        }
+        .box1{
+            width: 20%;
+        }
+        .box2{
+            width: 60%;
+        }
+        .box2 ul{
+            border: 1px solid pink;
+            font-size: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        li{
+            width: 20%;
+            display: inline-block;
+            border: 1px solid tomato;
+            font-size: 16px;
+            padding: 5px;
+            text-align: center;
+        }
+        .box3{
+            width: 20%;
+        }
+        .box4{
+            width: 400px;
+            height: 200px;
+            border: 3px solid #ccc;
+            clear: both;
+            overflow: hidden;
+        }
+
+        @media screen and (max-width:600px){
+            header div{
+                height: 250px;
+            }
+            .box2 ul li{
+                display: block;
+                width: 100%;
+                background-color: antiquewhite;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- display -->
+     <!-- block요소: div(header, nav, footer), p, section, article, aside, ul, ol, dd, dt, li -->
+     <!-- inline요소: span, a, input -->
+     <!-- inline-block: img, video, iframe, table -->
+
+    <!-- html: 문서의 구조를 완성 -->
+    <!-- css: 문서의 디자인을 완성 -->
+    <!-- script: 문서의 기능을 완성 -->
+    <!-- 웹프로그래밍언어: php(linux운영), jsp(공공기관운영/보안우수), asp(ms운영) -->
+
+    <!-- 선택자 -->
+     <!-- p.center: p태그 중 center클래스를 가진 것 -->
+     <!-- p .center: p태그의 자식들 중에 center클래스를 가진 것 -->
+     <!-- id / class / tag / nth-child() / nth-of-type() -->
+
+    <h1>선택자</h1>
+    <header>
+        <div class="box1">
+            <h2>로고</h2>
+        </div>
+        <div class="box2">
+            <h2>메뉴바</h2>
+            <ul>
+                <li>
+                    <a href="#">Naver01</a>
+                </li>
+                <li>
+                    <a href="#">Naver02</a>
+                </li>
+                <li>
+                    <a href="#">Naver03</a>
+                </li>
+                <li>
+                    <a href="#">Naver04</a>
+                </li>
+                <li>
+                    <a href="#">Naver05</a>
+                </li>
+            </ul>
+        </div>
+        <div class="box3">
+            <h2>검색창</h2>
+        </div>
+    </header>
+
+    <!-- box요소 가로정렬할때 자주 사용하는 테크닉 -->
+     <!-- 1. display:inline-block (자간격 발생) -->
+     <!-- 2. float:left; (부모가 인지하지 못함) -->
+     <!-- overflow:hidden; -->
+    
+    <div class="box4">우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 우리는 사나이 진짜사나이 씩씩하고 용감한 진짜사나이 </div>
+</body>
+</html>
