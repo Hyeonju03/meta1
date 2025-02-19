@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid red;
+            height: 200px;
+            min-width: 1000px;
+        }
+        p{
+            border: 1px solid blue;
+            display: none;
+        }
+        div:hover p{
+            display: block;
+        }
+        div:hover section{
+            visibility: visible;
+        }
+        span{
+            border: 2px solid purple;
+        }
+        section{
+            background-color: tomato;
+            height: 70px;
+            margin: 20px;
+            visibility: hidden;
+        }
+        /* display-none은 자리까지 사라짐. visibility-hidden은 자리는 남음 */
+    </style>
+</head>
+<body>
+    <h1>display속성에 none이라는 값을 주면 어떤일이 벌어질까?</h1>
+    <div>
+        <p>
+            나는 사라질거야
+        </p>
+        <span>
+            위에있는 p요소가 사라지면 나는 어캐될까나
+        </span>
+        <section>
+            나도 사라질꺼여
+        </section>
+        <span>
+            위에있는 section요소가 사라지면 나는 어캐될까나
+        </span>
+    </div>
+</body>
+</html>

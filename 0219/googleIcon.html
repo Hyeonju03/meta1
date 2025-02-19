@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>구글 아이콘 사용 예시</title>
+  <!-- 방법 1. icon으로 바꾸기 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+  
+  <!-- 방법 2. span으로 사용할때, Outlined다음 부분 지우고 &display=swap 달기 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
+  <style>
+    .h {
+      font-size: 48px;
+      color: red;
+    }
+
+    .r{font-size: 50px; color: blue;}
+  </style>
+</head>
+<body>
+  <!-- 방법1 -->
+  <i class="material-icons h">home</i>
+  <i class="material-icons r">radio_button_checked</i>
+  <i class="material-icons">delete</i>
+
+  <!-- 방법2 -->
+  <span class="material-symbols-outlined">
+    eco
+  </span>
+  <span class="material-symbols-outlined">
+    favorite
+  </span>
+</body>
+</html>

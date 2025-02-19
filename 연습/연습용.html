@@ -26,6 +26,7 @@
             padding: 0;
             box-sizing: border-box;
             font-family: moneyRounded;
+            color: #333;
         }
         body{
             height: 100vh;
@@ -38,7 +39,7 @@
         }
         #mainPaper{
             height: 80%;
-            width: 60%;
+            width: 55%;
             background-color: white;
             border-radius: 20px;
             /* margin: auto; */
@@ -57,6 +58,18 @@
             opacity: 0.8; /* 투명도 조절 가능 */
             mask-image: repeating-linear-gradient(to bottom, black 0px, black 5px, transparent 5px, transparent 10px);
             -webkit-mask-image: repeating-linear-gradient(to bottom, black 0px, black 5px, transparent 5px, transparent 10px);
+        }
+        #info{
+            height: 30%;
+            width: 80%;
+            background-color: antiquewhite;
+            margin: auto;
+        }
+        #main{
+            height: 60%;
+            width: 80%;
+            background-color: aqua;
+            margin: auto;
         }
         #userPaper{
             height: 80%;
@@ -83,11 +96,41 @@
         #userInfo p {
             margin: 5px;
         }
+        .btns div{
+            background-color: rgb(255, 76, 76);
+            border-radius: 10px 0 0 10px;
+            width: 82px;
+            height: 60px;
+            position: fixed;
+            display: table;
+            text-align: center;
+            left: 9.2%;
+        }
+        .btns div p{
+            display: table-cell;
+            vertical-align: middle;
+            color: white;
+        }
+
+        /* 홈버튼 안바뀜 */
+        .homeBtn{
+            background-color: white;
+        }
+        .homeBtn p{
+            color: #333;
+        }
     </style>
 </head>
 <body>
     <!-- 아 userPaper 는 col이고 suer는 row라서 또 따로 만드러양하는 아 생각하기 싫워요 -->
     <div id="mainPaper">
+        <div id="info">
+            <!-- 본인이 작성한 글/사진 목록들 같은거 -->
+        </div>
+        <div id="main">
+            <!-- 여기는 어캐 구현한걸까... 그냥 html? 아님 다른거 연결? 파이쎤 연결일수도? 근데 파이썬을 홈페이지에 띄우는게 되나?
+             될듯??????? -->
+        </div>
     </div>
     <div id="userPaper">
         <div id="user">
@@ -97,6 +140,26 @@
                 <p>이름: @@@</p>
                 <p>성별: @</p>
             </div>
+        </div>
+    </div>
+    <div class="btns">
+        <div class="homeBtn" style="top: 20%;">
+            <p>홈</p>
+        </div>
+        <div style="top: 30%;">
+            <p>프로필</p>
+        </div>
+        <div style="top: 40%;">
+            <p>다이어리</p>
+        </div>
+        <div style="top: 50%;">
+            <p>갤러리</p>
+        </div>
+        <div style="top: 60%;">
+            <p>게시판</p>
+        </div>
+        <div style="top: 70%;">
+            <p>방명록</p>
         </div>
     </div>
 </body>
