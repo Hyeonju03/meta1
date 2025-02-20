@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: #555;
+            display: block;
+            padding: 10px 15px;
+        }
+
+        .mom{
+            margin-top: 30px;
+            margin-left: 50px;
+            overflow: hidden;
+            margin-bottom: 100px;
+            height: 400px;
+        }
+        .mom > li{
+            float: left;
+            border: 2px solid #ccc;
+            position: relative;
+        }
+        .mom > li:hover{
+            background-color: #efefef;
+            border: 2px solid #333;
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 3;
+        }
+        .mom > li:nth-child(1){
+            border-radius: 5px 0 0 5px;
+        }
+        .mom > li:nth-child(2){
+            margin-left: -2px;
+            position: relative;
+            padding-right: 30px;
+        }
+        .mom > li:nth-child(3){
+            margin-left: -2px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        /* css에서 삼각형 만들기 */
+        /* div border-color를 이용해서 삼각형을 만들수 있다. 아래 참고. */
+        .mom > li:nth-child(2):after{
+            content: "";
+            border: 5px solid #555;
+            border-color: #555 transparent transparent transparent;
+            position:absolute;
+            top: 18px;
+            right: 25px;
+        }
+
+        /* 왜쨰서 쌤은 굳이 li맨 밑에 만들어서 absolute로 이동시키는걸까?? */
+        /* .mom > li:nth-child(2) > a::after{
+            position: relative;
+            top: 15px;
+            left: 5px;
+            content: "";
+            border: 5px solid #555;
+            border-color: #555 transparent transparent transparent;
+        } */
+         
+        .mom > li:nth-child(2):hover .blank{
+            display: block;
+        }
+
+        .blank{
+            display: none;
+            position: absolute;
+            width: 203px;
+        }
+        .son{
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            margin-top: 6px;
+        }
+        
+        .dot{
+            width:0;
+            border: 10px solid black;
+            clear: both;
+            margin-left: 50px;
+            border-color: black transparent transparent transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul class="mom">
+            <li>
+                <a href="#">공지사항</a>
+            </li>
+            <li>
+                <a href="#">도서 목록</a>
+                <div class="blank">
+                    <ul class="son">
+                        <li>
+                            <a href="#">Do it! 시리즈</a>
+                        </li>
+                        <li>
+                            <a href="#">업무 능력 필독서</a>
+                        </li>
+                        <li>
+                            <a href="#">바빠 학습법 시리즈</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="#">게시판</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="dot"></div>
+</body>
+
+</html>

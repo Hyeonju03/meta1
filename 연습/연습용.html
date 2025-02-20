@@ -96,7 +96,7 @@
         #userInfo p {
             margin: 5px;
         }
-        .btns div{
+        .btns > div{
             background-color: rgb(255, 76, 76);
             border-radius: 10px 0 0 10px;
             width: 82px;
@@ -106,17 +106,31 @@
             text-align: center;
             left: 9.2%;
         }
-        .btns div p{
+        .btns > div > p{
             display: table-cell;
             vertical-align: middle;
             color: white;
         }
 
+        .btns > div:hover{
+            background-color: white;
+            border-top: 5px solid rgb(255, 76, 76);
+            border-bottom: 5px solid rgb(255, 76, 76);
+            border-left: 5px solid rgb(255, 76, 76);
+        }
+
+        .btns > div:hover > p{
+            color: #333;
+        }
+
         /* 홈버튼 안바뀜 */
-        .homeBtn{
+        .btns > .homeBtn{
+            border-top: 5px solid rgb(255, 76, 76);
+            border-bottom: 5px solid rgb(255, 76, 76);
+            border-left: 5px solid rgb(255, 76, 76);
             background-color: white;
         }
-        .homeBtn p{
+        .btns > .homeBtn p{
             color: #333;
         }
     </style>

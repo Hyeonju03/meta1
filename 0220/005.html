@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" />
+    <style>
+        * {
+            font-size: 0px;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .mainNav {
+            margin: auto;
+            margin-top: 10px;
+            width: 360px;
+        }
+
+        .mainNav>li {
+            border: 1px solid #acacac;
+            display: inline-block;
+            width: 120px;
+        }
+
+        .mainNav>li:nth-of-type(1) {
+            border-radius: 5px 0 0 5px;
+        }
+
+        .mainNav>li:nth-of-type(3) {
+            border-radius: 0 5px 5px 0;
+        }
+
+        .mainNav>li>a {
+            display: block;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .mainNav>li:hover {
+            background-color: #efefef;
+            box-shadow: inset 1px 3px 5px #c2c2c2;
+        }
+
+        .mainNav>li:nth-of-type(2):hover .subNav {
+            display: block;
+        }
+
+        .icon {
+            position: relative;
+            top: -10px;
+            left: -7px;
+            width: 5px;
+            height: 5px;
+            vertical-align: middle;
+        }
+
+        .subNav {
+            display: none;
+            position: absolute;
+            width: 200px;
+            margin-top: 3px;
+            padding: 10px;
+            line-height: 24px;
+            border: 1px solid #c2c2c2;
+            border-radius: 5px;
+            box-shadow: 2px 5px 10px #c2c2c2;
+        }
+
+        .subNav>li:hover a {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 아이콘 로딩이 걸림 -->
+    <ul class="mainNav">
+        <li>
+            <a href="#">공지사항</a>
+        </li>
+        <li>
+            <a href="#">도서 목록
+                <span class="material-symbols-outlined icon">
+                    arrow_drop_down
+                </span>
+            </a>
+            <ul class="subNav">
+                <li>
+                    <a href="#">Do it! 시리즈</a>
+                </li>
+                <li>
+                    <a href="#">업무 능력 필독서</a>
+                </li>
+                <li>
+                    <a href="#">바빠 학습법 시리즈</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">게시판</a>
+        </li>
+    </ul>
+</body>
+
+</html>
