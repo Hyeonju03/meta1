@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'display';
+            font-weight: 100;
+            src: url('font/lora2.eot');
+            src: url('font/lora2.eot?#iefix')format('embedded-opentype'),
+                url('font/lora2.woff')format('woff'),
+                url('font/lora2.ttf')format('ttf');
+        }
+
+        * {
+            font-family: display;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: rgb(32, 84, 255);
+            text-decoration: none;
+            display: block;
+            padding: 3px 10px;
+        }
+
+        a>p {
+            color: rgb(32, 84, 255);
+        }
+
+        #wrap {
+            width: 960px;
+            margin: auto;
+            padding: 10px 0;
+        }
+
+        #header {
+            margin: 10px 0;
+        }
+
+        .nav {
+            overflow: hidden;
+        }
+
+        .nav>li {
+            border: 1px solid #333;
+            float: right;
+        }
+
+        .nav>li:nth-child(1) {
+            border-radius: 0 12px 12px 0;
+        }
+
+        .nav>li:nth-last-child(1) {
+            border-radius: 12px 0 0 12px;
+        }
+
+        .nav>li:hover {
+            background-color: #333;
+        }
+
+        .nav>li:hover>a {
+            color: white;
+        }
+
+        .logo {
+            width: 200px;
+        }
+
+        .lastNav {
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .lastNav>li {
+            border: 1px solid #333;
+            float: right;
+        }
+
+        .lastNav a {
+            padding: 10px 15px;
+        }
+
+        .lastNav>li:nth-child(1) {
+            border-radius: 0 10px 10px 0;
+        }
+
+        .lastNav>li:nth-last-child(1) {
+            border-radius: 10px 0 0 10px;
+        }
+
+        .lastNav>li:hover {
+            background-color: #333;
+        }
+
+        .lastNav>li:hover>a {
+            color: white;
+        }
+
+        #container {
+            width: 100%;
+        }
+
+        #main {
+            width: 750px;
+            display: inline-block;
+        }
+
+        .main-contents {
+            border: 1px solid #333;
+            margin-bottom: 5px;
+            padding: 20px 15px;
+        }
+
+        #content {
+            display: inline-block;
+            position: table-cell;
+            vertical-align: top;
+        }
+
+        .con-ul>li {
+            width: 100px;
+            height: 30px;
+            border: 1px solid #333;
+            float: left;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .first-ul {
+            width: 200px;
+            transform: translate(-0.5%, -2%);
+            display: none;
+        }
+
+        .sec-ul {
+            width: 200px;
+            transform: translate(-50.5%, -2%);
+            display: none;
+        }
+
+        .first-ul>li,
+        .sec-ul>li {
+            border: 1px solid #333;
+            padding: 5px 5px;
+            line-height: 20px;
+            justify-content: space-between;
+        }
+
+        .first-ul>li>a,
+        .sec-ul>li>a {
+            display: flex;
+            text-align: left;
+        }
+
+        .con-ul>li:nth-child(1):hover,
+        .con-ul>li:nth-child(2):hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .con-ul>li:nth-child(1):hover .first-ul,
+        .con-ul>li:nth-child(2):hover .sec-ul {
+            display: block;
+        }
+
+        .first-ul>li:hover>a,
+        .sec-ul>li:hover>a {
+            text-decoration: underline;
+        }
+
+        .li-img {
+            width: 45px;
+            height: 45px;
+            margin-right: 10px;
+        }
+
+        #footer {
+            border: 1px solid #333;
+            text-align: center;
+            position: relative;
+            padding: 10px;
+        }
+
+        #footer p {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="header">
+            <ul class="nav">
+                <li>
+                    <a href="#">Data</a>
+                </li>
+                <li>
+                    <a href="#">Simulation</a>
+                </li>
+                <li>
+                    <a href="#">Game</a>
+                </li>
+                <li>
+                    <a href="#">Mobile</a>
+                </li>
+                <li>
+                    <a href="#">Web</a>
+                </li>
+            </ul>
+            <img class="logo" src="car.png" alt="로고">
+            <ul class="lastNav">
+                <li class="last">
+                    <a href="#">Node.js</a>
+                </li>
+                <li>
+                    <a href="#">jQuery</a>
+                </li>
+                <li>
+                    <a href="#">JavaScript</a>
+                </li>
+                <li>
+                    <a href="#">CSS3</a>
+                </li>
+                <li class="first">
+                    <a href="#">HTML5</a>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="main">
+                <div class="main-contents">
+                    <h3>Main Article</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec
+                        pharetra nunc.
+                        Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc Aliquam blandit, sapien ut
+                        viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt
+                        dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris.
+                        Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas
+                        justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec
+                        iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque.
+                        Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus
+                        porttitor. aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.
+                    </p>
+                </div>
+                <div class="main-contents">
+                    <h3>Main Article</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec
+                        pharetra nunc.
+                        Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc Aliquam blandit, sapien ut
+                        viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt
+                        dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris.
+                        Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas
+                        justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec
+                        iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque.
+                        Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus
+                        porttitor. aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.
+                    </p>
+                </div>
+                <div class="main-contents">
+                    <h3>Main Article</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec
+                        pharetra nunc.
+                        Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc Aliquam blandit, sapien ut
+                        viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt
+                        dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris.
+                        Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas
+                        justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec
+                        iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque.
+                        Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus
+                        porttitor. aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.
+                    </p>
+                </div>
+            </div>
+            <div id="content">
+                <ul class="con-ul">
+                    <li>
+                        First
+                        <ul class="first-ul">
+                            <li>
+                                <a href="#">
+                                    <img class="li-img" src="cloud.png" alt="사진">
+                                    <p>HTML5 Canvas
+                                        <br /> 2012-03-15
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Second
+                        <ul class="sec-ul">
+                            <li>
+                                <a>
+                                    <img class="li-img" src="cloud.png" alt="사진">
+                                    <p>HTML5 Audio
+                                        <br /> 2012-03-15
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer">
+            <p>
+            <h3>HTML5+CSS3 Basic</h3>
+            Website Layout Basic
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

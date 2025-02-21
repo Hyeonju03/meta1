@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout 만들기</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            border: 1px solid #ccc;
+            text-decoration: none;
+        }
+
+        body {
+            color: #333;
+            background-color: #efefef;
+        }
+
+        #container {
+            width: 960px;
+            margin: auto;
+        }
+
+        /* header */
+        header {
+            height: 200px;
+            position: relative;
+        }
+
+        h1 {
+            position: absolute;
+            left: 10px;
+            top: 80px;
+        }
+
+        /* topMenu */
+        .top_menu {
+            overflow: hidden;
+            float: right;
+        }
+
+        .top_menu li {
+            float: left;
+        }
+
+        .top_menu a {
+            display: block;
+            padding: 5px 10px;
+        }
+
+        /* gnb */
+        .gnb {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .gnb li {
+            float: left;
+        }
+
+        .gnb a {
+            display: block;
+            padding: 10px 20px;
+        }
+
+        /* main */
+        main {
+            margin-top: 10px;
+            overflow: hidden;
+        }
+
+        section {
+            width: 750px;
+            height: 100%;
+            float: left;
+        }
+
+        article {
+            height: 300px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            padding: 20px 15px;
+        }
+
+        article:nth-last-child(1) {
+            margin-bottom: 0;
+        }
+
+        aside {
+            width: 198px;
+            float: right;
+        }
+
+        aside li p {
+            line-height: 45px;
+            border: 1px solid #ccc;
+        }
+
+        aside li p img {
+            float: left;
+            margin-right: 10px;
+        }
+
+        /* footer */
+        footer {
+            height: 100px;
+            margin-top: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        footer h3 {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 작업중 임시이미지 적용하기 http://placehold.co/100x100 임시링크걸기 = # -->
+    <div id="container">
+        <header>
+            <h1>html/css</h1>
+            <ul class="top_menu">
+                <li>
+                    <a href="#">web</a>
+                </li>
+                <li>
+                    <a href="#">mobile</a>
+                </li>
+                <li>
+                    <a href="#">simulator</a>
+                </li>
+                <li>
+                    <a href="#">game</a>
+                </li>
+                <li>
+                    <a href="#">data</a>
+                </li>
+            </ul>
+            <ul class="gnb">
+                <li>
+                    <a href="#">html5</a>
+                </li>
+                <li>
+                    <a href="#">css3</a>
+                </li>
+                <li>
+                    <a href="#">javascript</a>
+                </li>
+                <li>
+                    <a href="#">jQuery</a>
+                </li>
+                <li>
+                    <a href="#">node.js</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section>
+                <article>
+                    <h2>Article01</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti numquam explicabo ratione
+                        voluptate unde voluptatum veritatis. Nam aspernatur quidem praesentium cupiditate doloremque
+                        consequatur eaque nemo magni accusantium, tempore temporibus voluptatum!</p>
+                </article>
+                <article>
+                    <h2>Article02</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti numquam explicabo ratione
+                        voluptate unde voluptatum veritatis. Nam aspernatur quidem praesentium cupiditate doloremque
+                        consequatur eaque nemo magni accusantium, tempore temporibus voluptatum!</p>
+                </article>
+                <article>
+                    <h2>Article03</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti numquam explicabo ratione
+                        voluptate unde voluptatum veritatis. Nam aspernatur quidem praesentium cupiditate doloremque
+                        consequatur eaque nemo magni accusantium, tempore temporibus voluptatum!</p>
+                </article>
+            </section>
+            <aside>
+                <ul>
+                    <li>
+                        <p><img src="http://placehold.co/45x45"> html/css</p>
+                    </li>
+                    <li>
+                        <p><img src="http://placehold.co/45x45"> html/css</p>
+                    </li>
+                    <li>
+                        <p><img src="http://placehold.co/45x45"> html/css</p>
+                    </li>
+                    <li>
+                        <p><img src="http://placehold.co/45x45"> html/css</p>
+                    </li>
+                </ul>
+            </aside>
+        </main>
+        <footer>
+            <h3>page Layout을 정리하자</h3>
+            <address>대전시 중구 은행동 123번길 디더블유아카데미</address>
+        </footer>
+    </div>
+
+
+    <!-- 서열 : 1.id 2.class 3.태그 -->
+    <!-- 더 정확한순서 -->
+    <!-- 
+    <style>
+    #demo {color: blue;}
+    .test {color: green;} 
+    p {color: red;} 
+    </style>
+    </head>
+    <body>
+
+    <p id="demo" class="test" style="color: pink;">Hello World!</p> 
+    위와 같은 경우 인라인이 최우선.
+    인라인 스타일이 없으면 id를 이용한 blue가 먹힘.
+
+    만약 .test{color: green !important;}를 쓰면 important가 우선
+    -->
+
+    <!-- width: max(50%, 300px) 이런경우 창이 작아 50%가 작으면 300px로 너비가 지정됨. 
+     min은 그 반대-->
+</body>
+
+</html>
